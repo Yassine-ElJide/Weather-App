@@ -1,0 +1,148 @@
+@import 'basics';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1, h2 , h3{
+    color: color(hovers);
+}
+
+body{
+    background :linear-gradient(45.34deg, #5B507A 5.66%, #9EADC8 94.35%) ;
+    height: 100vh;
+    font-family: 'Open Sans';
+    background-size: cover;
+    overflow-y: hidden;
+}
+header{
+    @include flex(space-between,column);
+    width : 80%;
+    height: 7rem;
+    margin: 1rem auto;
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        color: color(secondary);
+        @include media-md{
+            font-size:1.3rem;
+        }
+    }
+    span{
+        color : color(hovers);
+        font-weight: 700;
+    }
+    .form{
+        margin-top : 1rem;
+        width: 100vw;
+        @include flex(center , row);
+        label{
+            margin: 0 1rem;
+            font-size : 1.5rem;
+            font-weight: 700;
+            color : color(hover);
+
+            @include media-md{
+                font-size: 1rem;
+                margin: 0 .4rem;
+            }
+        }
+        .input{
+            border : transparent;
+            border-radius: 6px;
+            color : color(secondary);
+            outline : none;
+            padding: 4px 8px;
+            margin: 0 1rem;
+            width: 200px;
+            background:inherit;
+            font-size : 1.1rem;
+            border-bottom:  3px solid color(hovers);
+            box-shadow: 1px 1px 12px color(hovers);
+            @include media-md{
+                padding: 2px 4px;
+                width: 100px;
+                font-size: 1rem;
+                margin: 0 .5rem;
+            }
+        }
+        button{
+            margin: 0px 2rem;
+            padding: 10px;
+            border-radius : 10px;
+            outline : none;
+            font-size: 1.1rem;
+            font-weight : 600;
+            color : color(primary);
+            background : color(hovers);
+            border : none;
+            transition: all .5s ease;
+            cursor : pointer;
+            @include media-md{
+                margin: 0 1rem;
+                padding: 5px;
+            }
+        }
+        button:hover{
+            color:color(secondary);
+            background : color(dark);
+        }
+    }
+}
+
+main{
+    @include flex(center, row);
+    width: 40%;
+    margin: 0 auto;
+    box-shadow : 1px 1px 4px color(hovers);
+    border-radius: 8px;
+    @include media-md{
+        margin: 60px auto;
+    }
+    .currentTarget{
+        @include flex(center,column);
+        margin: 30px 0;
+        &__name{
+            color: color(secondary);
+            font-weight : 600;
+            letter-spacing :2px;
+            padding-bottom: 2rem;
+            font-size: 3rem;
+            @include media-md{
+                font-size:1.5rem;
+                padding-bottom : 1rem;
+            }
+        }
+        img{
+            width:170px;
+            @include media-md{
+                width:100px;
+            }
+        }
+        &__temperature{
+            color: color(secondary);
+            font-size: 3rem;
+            margin-top: .8rem;
+            @include media-md{
+                font-size:1.5rem;
+            }
+        }
+        &__min-max{
+            @include flex(space-around , row);
+            width: 100%;
+            font-size:1.3rem;
+            color : color(dark);
+            margin-bottom: 2rem;
+            @include media-md{
+                font-size: 1rem;
+            }
+            
+        }
+        &__weather{
+            font-size:1.5rem;
+            color : color(secondary);
+            @include media-md{
+                font-size:1rem;
+            }
+        }
+    }
+
+}

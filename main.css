@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #011936;
+}
+
+body {
+  background: linear-gradient(45.34deg, #5B507A 5.66%, #9EADC8 94.35%);
+  height: 100vh;
+  font-family: 'Open Sans';
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 7rem;
+  margin: 1rem auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  color: #f2eaec;
+}
+
+@media screen and (max-width: 840px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+}
+
+header span {
+  color: #011936;
+  font-weight: 700;
+}
+
+header .form {
+  margin-top: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+header .form label {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 840px) {
+  header .form label {
+    font-size: 1rem;
+    margin: 0 .4rem;
+  }
+}
+
+header .form .input {
+  border: transparent;
+  border-radius: 6px;
+  color: #f2eaec;
+  outline: none;
+  padding: 4px 8px;
+  margin: 0 1rem;
+  width: 200px;
+  background: inherit;
+  font-size: 1.1rem;
+  border-bottom: 3px solid #011936;
+  box-shadow: 1px 1px 12px #011936;
+}
+
+@media screen and (max-width: 840px) {
+  header .form .input {
+    padding: 2px 4px;
+    width: 100px;
+    font-size: 1rem;
+    margin: 0 .5rem;
+  }
+}
+
+header .form button {
+  margin: 0px 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0E6BA8;
+  background: #011936;
+  border: none;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+  header .form button {
+    margin: 0 1rem;
+    padding: 5px;
+  }
+}
+
+header .form button:hover {
+  color: #f2eaec;
+  background: #0F1928;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 4px #011936;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 840px) {
+  main {
+    margin: 60px auto;
+  }
+}
+
+main .currentTarget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+main .currentTarget__name {
+  color: #f2eaec;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 840px) {
+  main .currentTarget__name {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+main .currentTarget img {
+  width: 170px;
+}
+
+@media screen and (max-width: 840px) {
+  main .currentTarget img {
+    width: 100px;
+  }
+}
+
+main .currentTarget__temperature {
+  color: #f2eaec;
+  font-size: 3rem;
+  margin-top: .8rem;
+}
+
+@media screen and (max-width: 840px) {
+  main .currentTarget__temperature {
+    font-size: 1.5rem;
+  }
+}
+
+main .currentTarget__min-max {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #0F1928;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 840px) {
+  main .currentTarget__min-max {
+    font-size: 1rem;
+  }
+}
+
+main .currentTarget__weather {
+  font-size: 1.5rem;
+  color: #f2eaec;
+}
+
+@media screen and (max-width: 840px) {
+  main .currentTarget__weather {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

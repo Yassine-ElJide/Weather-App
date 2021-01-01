@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$colors : ('primary' :#0E6BA8 , 'secondary':#f2eaec , 'headers' :#FDF1DB  , 'hovers' : #011936, "dark": #0F1928);
+
+@function color($color-name){
+    @return map-get($colors , $color-name);
+}
+
+
+@mixin flex($content, $direction){
+    display: flex;
+    justify-content: $content ;
+    align-items: center;
+    flex-direction: $direction;
+}
+@mixin media-md{
+    @media screen and (max-width : 840px){
+        @content;
+    }
+}
